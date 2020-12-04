@@ -5,6 +5,11 @@ import { useSpring, a } from 'react-spring/three'
 
 softShadows()
 
+const SpinningMesh = ({position, color, speed, args}) => {
+  const mesh = useRef()
+  
+}
+
 function App() {
   return (
     <div>
