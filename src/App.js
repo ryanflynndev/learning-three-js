@@ -9,6 +9,9 @@ const SpinningMesh = ({position, color, speed, args}) => {
   const mesh = useRef()
 
   useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01))
+
+  const [expand, setExpand] = useState(false)
+  
 }
 
 function App() {
