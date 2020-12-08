@@ -11,7 +11,10 @@ const SpinningMesh = ({position, color, speed, args}) => {
   useFrame(() => (mesh.current.rotation.x = mesh.current.rotation.y += 0.01))
 
   const [expand, setExpand] = useState(false)
-  
+
+  const props = useSpring({
+    scale: expand ? [1.4, 1.4, 1.4] : [1, 1, 1]
+  })
 }
 
 function App() {
