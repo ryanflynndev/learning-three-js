@@ -15,6 +15,10 @@ const SpinningMesh = ({position, color, speed, args}) => {
   const props = useSpring({
     scale: expand ? [1.4, 1.4, 1.4] : [1, 1, 1]
   })
+  const look = useSpring({
+    opacity: 1, 
+    from: {opacity: 0}
+  })
 }
 
 function App() {
