@@ -19,6 +19,11 @@ const SpinningMesh = ({position, color, speed, args}) => {
     opacity: 1, 
     from: {opacity: 0}
   })
+  return(
+    <a.mesh>
+      
+    </a.mesh>
+  )
 }
 
 function App() {
