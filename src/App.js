@@ -20,8 +20,12 @@ const SpinningMesh = ({position, color, speed, args}) => {
     from: {opacity: 0}
   })
   return(
-    <a.mesh>
+    <a.mesh
+      position={position}
+      ref={mesh}
       
+    >
+
     </a.mesh>
   )
 }
